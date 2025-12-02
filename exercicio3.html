@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incrementar e Decrementar</title>
+    <script>
+        let valor = 0;
+
+        function atualizarValor() {
+            document.getElementById("valor").textContent = valor;
+        }
+
+        function incrementar() {
+            valor++;
+            atualizarValor();
+        }
+
+        function decrementar() {
+            valor--;
+            atualizarValor();
+        }
+    </script>
+</head>
+<body>
+    <h1>Incrementar e Decrementar</h1>
+    <h2>Valor: <span id="valor">0</span></h2>
+    <button onclick="incrementar()">Aumentar</button>
+    <button onclick="decrementar()">Diminuir</button>
+</body>
+</html>
